@@ -38,8 +38,14 @@ const List = () => {
     }
   }
     getStudentData()
-  },[])
-
+  }, [])
+  const onDeleteText = async (id) => {
+    await axios.delete(`http://localhost:4001/students/${id}`)
+    let newStudent = student.filter((item) => {
+      return item.id!==id
+    })
+    setStudent(newStudent)
+  }
   return (
     <>
       <Box textAlign='center' p={2} mb={1} borderRadius={3} className={classes.stuListColor}>
@@ -69,11 +75,11 @@ const List = () => {
                 </Tooltip>
 
                 <Tooltip title='Edit'>
-                  <IconButton><Link to='/edit'><EditIcon color='warning'/></Link></IconButton>
+                  <IconButton><Link to={`/edit/${student.id}`} ><EditIcon color='warning'/></Link></IconButton>
                 </Tooltip>
 
                 <Tooltip title='Delete'>
-                  <IconButton><Link to='/delete'><DeleteIcon color='error'/></Link></IconButton>
+                  <IconButton onClick={()=>onDeleteText(student.id)}><DeleteIcon color='error'/></IconButton>
                 </Tooltip>
 
               </TableCell>
