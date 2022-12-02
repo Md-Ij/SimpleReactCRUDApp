@@ -3,8 +3,6 @@
 
 <h2 align="center">Simple Project React CRUD Operation 👩‍💻</h2>
 
-***
-
 ### To run this Project follow below steps
 ```bash
 npm install 
