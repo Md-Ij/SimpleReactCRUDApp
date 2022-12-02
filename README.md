@@ -1,7 +1,7 @@
 
-# ***Assalamu Allaikum My All Friends*** 😃
+<h1 align="center"><i>Assalamu Allaikum My All Friends</i> 😃</h1>
 
-<h2 align="center">Simple Project React CRUD Operation 👩‍💻</h2>
+<h2>Simple Project React CRUD Operation 👩‍💻</h2>
 
 ### To run this Project follow below steps
 ```bash
