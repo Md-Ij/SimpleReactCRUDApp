@@ -1,7 +1,7 @@
 
 <h1 align="center"><i>Assalamu Allaikum My All Friends</i> 😃</h1>
 
-<h2>Simple Project React CRUD Operation 👩‍💻</h2>
+<h2>This Is My Simple Project React CRUD Operation 👩‍💻</h2>
 
 ### To run this Project follow below steps
 ```bash
